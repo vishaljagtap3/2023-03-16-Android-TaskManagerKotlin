@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="32dp">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/txtTaskTitle"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTaskTitle"
+        app:layout_constraintLeft_toLeftOf="@id/txtTaskTitle"
+        android:id="@+id/txtTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTaskDescription"
+        app:layout_constraintLeft_toLeftOf="@id/txtTaskDescription"
+        android:id="@+id/txtTaskDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/txtTaskDueDate"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/txtTaskPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
